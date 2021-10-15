@@ -5,13 +5,6 @@ import techBlog from '../assets/images/techblog.png';
 function Portfolio() {
     return (
     <div>
-        {/* <section className="header1">
-            <h2 className="headerColor">Portfolio</h2>
-            <div className="buttonbox">
-                <input type="button" value="-" className="btn2"></input>
-            </div>
-        </section> */}
-
         <div className="jumbotron aboutMe">
             <section class="header1">
                 <h2 className="headerColor"><u>Full Stack Programs</u></h2>

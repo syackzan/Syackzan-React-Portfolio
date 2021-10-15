@@ -149,6 +149,23 @@
     right: 2px;
 }
 
+.fitResume {
+    height: fit-content;
+}
+
+.resumeHeader {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    border-bottom: 2px solid var(--navColor);
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.taller {
+    height: 1000px;
+}
+
 /* Footer Styling/Fixing footer to bottom of page */
 .footer {
     display: flex;
