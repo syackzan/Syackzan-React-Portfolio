@@ -35,11 +35,13 @@
     color: var(--navColor)
 }
 
+/* Changing Nav Links to a differnt style than normal underline blue */
 .navStyle {
     color: var(--navColor);
     text-decoration: none;
 }
 
+/* Making the Text darker on h1 header */
 .textDarker {
     margin: 0px;
     text-align: end;
