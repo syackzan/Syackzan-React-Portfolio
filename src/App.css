@@ -55,6 +55,13 @@
     color: var(--navColor)
 }
 
+.active {
+    background-color: lightgray;
+    color:rgb(146, 87, 87);
+    border-radius: 5px;
+    padding: 6px;
+}
+
 .footer {
     display: flex;
     justify-content: center;
