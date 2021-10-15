@@ -162,8 +162,14 @@
     text-align: center;
 }
 
+/* Making the Resume Container Taller to fit Resume */
 .taller {
     height: 1000px;
+}
+
+/* padding for Form content */
+.formPadding {
+    padding: 10px;
 }
 
 /* Footer Styling/Fixing footer to bottom of page */

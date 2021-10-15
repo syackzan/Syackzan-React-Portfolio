@@ -7,7 +7,7 @@ function Resume() {
     return (
         <div className='jumbotron center'>
             <div className='row d-flex mainBorder fitResume'>
-                    <h1 className="resumeHeader textDarker">Resume - click below to Download a copy</h1>
+                    <h1 className="resumeHeader textDarker">Resume</h1>
                     <a href={resumeimg}>Download Resume Here</a>
                     <img src={resumeimg} alt="resume" />   
             </div>
