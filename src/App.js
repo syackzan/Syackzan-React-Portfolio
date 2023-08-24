@@ -8,7 +8,7 @@ import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
 
 function App () {
-    const [currentPage, setCurrentPage] = useState('About')
+    const [currentPage, setCurrentPage] = useState('Portfolio')
 
     const renderPage = () => {
         if (currentPage === 'About'){
