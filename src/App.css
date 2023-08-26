@@ -3,16 +3,108 @@
     --navColor: rgb(180, 152, 152);
 }
 
+body, html {
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: "Comfortaa-Light";
+    font-style: normal;
+    font-weight: 300;
+    src: local('Comfortaa Light'), local('Comfortaa-Light')
+    url('./fonts/Comfortaa-Light.ttf') format('truetype');
+}
+
 /* Universal Border Used on Pages */
 .mainBorder {
-    border: 2px solid var(--navColor);
-    border-radius: 5px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    height: 350px;
 }
 
 /* Used to Center main Pages */
 .center {
     margin: 50px;
 }
+
+.portfolioContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .square {
+    flex: 1 0 calc(25% - 20px); /* 4 columns, with 20px of margin */
+    background-color: #f5f5f5;
+    aspect-ratio: 1/1; /* Create a square aspect ratio */
+    transition: flex 0.3s ease;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+  }
+
+  .square:hover,
+  .square:hover h1,
+  .square:hover h2
+  {
+    background-color: black;
+    color: white;
+  }
+
+
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .thumb-title {
+    margin-top: 0;
+    font-size: 16px;
+    color: #f5f5f5;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+  }
+
+  .thumb-subtitle{
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #f5f5f5;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+  }
+
+  .image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
 
 /* Styling Header */
 .headerStyle {
@@ -91,13 +183,14 @@
 }
 
 .headerTextStyle{
-    font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+    font-family: Arial, Helvetica, sans-serif; /* Use a clean sans-serif font */
     font-size: 16px; /* Adjust the font size as needed */
     font-weight: normal; /* Regular font weight */
     color: #333; /* Dark gray text color */
     line-height: 1.5; /* Comfortable line height */
     margin: 0; /* Reset margin for consistent spacing */
     text-decoration: none;
+    text-shadow: 0.1px 0.1px 0.1px black;
 }
 
 /* Changing Nav Links to a differnt style than normal underline blue */
@@ -110,6 +203,7 @@
     margin: 0; /* Reset margin for consistent spacing */
     text-decoration: none;
     padding-left: 10px;
+    text-shadow: 0.1px 0.1px 0.1px black;
 }
 
 .navStyle:hover{
@@ -121,6 +215,16 @@
     margin: 0px;
     text-align: end;
     color: rgb(146, 87, 87);
+}
+
+.bottomHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: 100px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid black;
 }
 
 
@@ -260,3 +364,16 @@
         width: 40%
     }
 }
+
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .square {
+      flex: 1 0 calc(50% - 20px); /* 2 columns, with 20px of margin */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .square {
+      flex: 1 0 calc(100% - 20px); /* 1 column, with 20px of margin */
+    }
+  }

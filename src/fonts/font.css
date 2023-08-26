@@ -1,0 +1,7 @@
+/* File: font.css */
+
+@font-face {
+    font-family: "Comfortaa-Light";
+    src: local('Comfortaa-Light'), 
+    url('./fonts/Caveat-Regular.tff') format('tff');
+}
